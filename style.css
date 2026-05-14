@@ -256,7 +256,6 @@ textarea {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   box-shadow: 0 18px 50px rgba(15, 23, 42, 0.04);
-  padding: 28px;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -416,33 +415,40 @@ textarea {
 }
 
 .work-card {
-  border-radius: 24px;
+  border-radius: 30px;
   overflow: hidden;
   background: #ffffff;
   border: 1px solid rgba(0, 104, 255, 0.18);
   box-shadow: 0 18px 40px rgba(0, 104, 255, 0.1);
+  min-height: 360px;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .work-card-head {
+  width: 100%;
   background: var(--accent);
-  padding: 28px 24px; 
+  padding: 36px 28px 30px;
+  border-radius: 30px 30px 0 0;
 }
 
 .work-card-head h3 {
   margin: 0;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
 .work-card-body {
-  padding: 24px;
-  color: var(--muted);
+  padding: 28px 30px 32px;
+  color: #344054;
 }
 
 .work-card-body p {
   margin: 0;
-  line-height: 1.75;
+  line-height: 1.8;
+  font-size: 0.98rem;
 }
 
 .work-copy {
