@@ -367,29 +367,38 @@ textarea {
 
 .tool-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px;
+  gap: 20px;
 }
 
-.tool-card {
-  padding: 32px;
+.tool-row {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0, 104, 255, 0.12);
 }
 
-.badge-row {
+.tool-row:last-child {
+  border-bottom: none;
+}
+
+.tool-label {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.tool-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 18px;
+  gap: 18px;
+  align-items: center;
 }
 
-.badge-row span {
-  display: inline-flex;
-  padding: 10px 16px;
-  border-radius: 12px;
-  background: rgba(0, 104, 255, 0.1);
-  color: var(--accent);
-  font-size: 0.9rem;
-  font-weight: 500;
+.tool-icons img {
+  height: 110px;
+  width: auto;
 }
 
 .work-section {
@@ -627,6 +636,10 @@ textarea:focus {
 
   .hero-accent-card {
     inset: 8% 4% 0 4%;
+  }
+
+  .tool-row {
+    grid-template-columns: 1fr;
   }
 }
 
