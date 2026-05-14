@@ -297,13 +297,18 @@ textarea {
   color: var(--muted);
 }
 
-.icon-placeholder {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
   background: rgba(0, 104, 255, 0.12);
   border: 1px solid rgba(0, 104, 255, 0.2);
   margin-bottom: 18px;
+  color: var(--accent);
+  font-size: 1.15rem;
 }
 
 .workflow-section {
