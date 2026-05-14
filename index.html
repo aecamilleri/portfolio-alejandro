@@ -3,42 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Alejandro Camilleri — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Alejandro's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="header-inner container">
+                <a href="#hero" class="brand">Alejandro Camilleri.</a>
+                <nav class="main-nav" aria-label="Primary navigation">
+                    <a href="#impact">Things I worked</a>
+                    <a href="#work">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <a href="#contact" class="btn btn-primary">Contact</a>
+            </div>
+        </header>
 
-    <main>
-        <section id="home">
-            <h2>Welcome</h2>
-        </section>
+        <main>
+            <section id="hero" class="hero-section container">
+                <div class="hero-copy">
+                    <div class="hero-card">
+                        <p class="eyebrow">Digital product design + web development</p>
+                        <h1>I build websites and digital experiences at start-up speed</h1>
+                        <p>Modern brand experiences that are fast, polished, and designed to move visitors toward action. Every page is built to feel simple, professional, and ready for growth.</p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-primary">Start a project</a>
+                            <a href="#work" class="btn btn-secondary">See portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="portrait-card"></div>
+                    <div class="hero-accent-card"></div>
+                </div>
+            </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
+            <section id="impact" class="section-block container">
+                <div class="section-header">
+                    <p class="section-label">Impact</p>
+                    <h2>Where I make the biggest impact</h2>
+                </div>
+                <div class="grid impact-grid">
+                    <article class="feature-card">
+                        <div class="icon-placeholder"></div>
+                        <h3>Make your app look sharper and load faster</h3>
+                        <p>Optimized interfaces and performance-first pages that feel polished from first load to final interaction.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon-placeholder"></div>
+                        <h3>Turn confusing flows into smart experiences</h3>
+                        <p>Simple, intuitive journeys that help users complete tasks quickly and with confidence.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon-placeholder"></div>
+                        <h3>Bring ideas to life with flexible websites</h3>
+                        <p>Clean, scalable sites built for quick revisions, modern content editing, and future growth.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon-placeholder"></div>
+                        <h3>Create and launch sites that generate results</h3>
+                        <p>Goal-driven launches with focus on clarity, speed, visibility, and measurable client outcomes.</p>
+                    </article>
+                </div>
+            </section>
 
-        <section id="about">
-            <h2>About</h2>
-        </section>
+            <section class="section-block container workflow-section">
+                <div class="workflow-copy">
+                    <p class="section-label">How I work</p>
+                    <h2>How I work with you</h2>
+                    <p>Collaboration starts with understanding your product, your goals, and the people you serve. I pair structured planning with fast execution so we can move from first concept to launch-ready delivery quickly.</p>
+                </div>
+                <aside class="workflow-card">
+                    <span class="card-tag">Clients bring me in when...</span>
+                    <ul>
+                        <li>they need a lean, modern website fast</li>
+                        <li>their product requires polished UX and clear messaging</li>
+                        <li>existing funnels need higher conversion</li>
+                        <li>they want a dependable partner through launch</li>
+                    </ul>
+                    <div class="pricing-bar">
+                        <div>
+                            <strong>Pricing</strong>
+                            <p>Starts from <span>$3,200</span></p>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">Talk pricing</a>
+                    </div>
+                </aside>
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
-    </main>
+            <section class="section-block container tools-section">
+                <div class="section-header">
+                    <p class="section-label">Tools</p>
+                    <h2>The tools I use to deliver fast, clean results</h2>
+                </div>
+                <div class="tool-grid">
+                    <div class="tool-card">
+                        <h3>Front-end Development</h3>
+                        <div class="badge-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span></div>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Web platforms and tools</h3>
+                        <div class="badge-row"><span>Webflow</span><span>WordPress</span><span>Netlify</span><span>Vercel</span></div>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Analytics and optimization</h3>
+                        <div class="badge-row"><span>Google Analytics</span><span>Hotjar</span><span>SEO</span><span>Performance</span></div>
+                    </div>
+                    <div class="tool-card">
+                        <h3>User Experience</h3>
+                        <div class="badge-row"><span>Design systems</span><span>Prototyping</span><span>Content strategy</span><span>Accessibility</span></div>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 Alejandro. All rights reserved.</p>
-    </footer>
+            <section id="work" class="section-block container work-section">
+                <div class="work-cards">
+                    <article class="work-card">
+                        <h3>Web portal experience for a successful API automation start-up</h3>
+                    </article>
+                    <article class="work-card">
+                        <h3>Built a WordPress website in Concrete5</h3>
+                    </article>
+                    <article class="work-card">
+                        <h3>Designed and built Web3/digital application projects</h3>
+                    </article>
+                    <article class="work-card">
+                        <h3>Built the brand for a startup software platform</h3>
+                    </article>
+                </div>
+                <div class="work-copy">
+                    <p class="section-label">Experience</p>
+                    <h2>What I’ve done before and can do for you</h2>
+                </div>
+            </section>
+
+            <section class="section-block container testimonial-section">
+                <div class="section-header">
+                    <p class="section-label">Testimonials</p>
+                    <h2>Why clients bring me back</h2>
+                </div>
+                <div class="grid testimonial-grid">
+                    <article class="testimonial-card">
+                        <p>“Alejandro took our complex product roadmap and made every experience feel fast, intuitive, and polished. The launch was smoother than we expected.”</p>
+                        <footer>
+                            <strong>Maria Chen</strong>
+                            <span>Product Lead, ScaleLabs</span>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>“Working with Alejandro was efficient and professional. He delivered clean design and a website that clearly elevated our brand.”</p>
+                        <footer>
+                            <strong>Javier Ortiz</strong>
+                            <span>Founder, Startup Studio</span>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-block container portfolio-section">
+                <div class="section-header">
+                    <p class="section-label">Portfolio</p>
+                    <h2>Selected work</h2>
+                </div>
+                <div class="filter-row" role="tablist" aria-label="Portfolio filters">
+                    <button type="button" class="filter-btn active" data-filter="websites">Websites</button>
+                    <button type="button" class="filter-btn" data-filter="collateral">Collateral</button>
+                    <button type="button" class="filter-btn" data-filter="ux">UX & Graphic Design</button>
+                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-card" data-category="websites">
+                        <div class="portfolio-thumb"></div>
+                        <h3>Responsive website for SaaS growth</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="websites">
+                        <div class="portfolio-thumb"></div>
+                        <h3>Launch page and brand refresh</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="collateral">
+                        <div class="portfolio-thumb"></div>
+                        <h3>Sales deck and print collateral</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="ux">
+                        <div class="portfolio-thumb"></div>
+                        <h3>UX flow for digital onboarding</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="collateral">
+                        <div class="portfolio-thumb"></div>
+                        <h3>Brand toolkit and visual system</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="ux">
+                        <div class="portfolio-thumb"></div>
+                        <h3>Interface system for mobile product</h3>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-block container services-section">
+                <div class="section-header">
+                    <p class="section-label">Services</p>
+                    <h2>How we can work together</h2>
+                </div>
+                <div class="grid service-grid">
+                    <article class="service-card">
+                        <h3>Project Work</h3>
+                        <p>Full website builds, product launches, and website refreshes that ship quickly while staying polished.</p>
+                        <div class="service-meta">
+                            <span>Cost: $3,200+</span>
+                            <span>Billing: per project</span>
+                            <span>Minimum: 4 weeks</span>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <h3>Supplement your Team</h3>
+                        <p>Short-term support for design, development, or content execution when you need an extra expert.</p>
+                        <div class="service-meta">
+                            <span>Cost: $150/hr</span>
+                            <span>Billing: hourly</span>
+                            <span>Minimum: 2 weeks</span>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <h3>Transitional Support</h3>
+                        <p>Project handoff help, product buildout, and launch support for teams scaling quickly.</p>
+                        <div class="service-meta">
+                            <span>Cost: $2,500+</span>
+                            <span>Billing: monthly</span>
+                            <span>Minimum: 1 month</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section-block container contact-section">
+                <div class="contact-copy">
+                    <p class="section-label">Contact</p>
+                    <h2>Let’s chat about how I can help</h2>
+                    <p>Reach out to talk through your current project, product goals, or next website launch. I move quickly and make sure every collaboration stays aligned and clear.</p>
+                    <div class="social-row" aria-label="Social links">
+                        <span class="social-pill">LN</span>
+                        <span class="social-pill">TW</span>
+                        <span class="social-pill">EM</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-grid">
+                        <label>
+                            <span>First name</span>
+                            <input type="text" name="firstName" placeholder="First name">
+                        </label>
+                        <label>
+                            <span>Email address</span>
+                            <input type="email" name="email" placeholder="Email address">
+                        </label>
+                        <label>
+                            <span>Phone number</span>
+                            <input type="tel" name="phone" placeholder="Phone number">
+                        </label>
+                    </div>
+                    <label class="full-width">
+                        <span>Message</span>
+                        <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© 2026 Alejandro Camilleri. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#work">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
