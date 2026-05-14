@@ -417,12 +417,32 @@ textarea {
 
 .work-card {
   border-radius: 24px;
-  padding: 32px;
-  background: linear-gradient(135deg, rgba(0, 104, 255, 0.12) 0%, rgba(0, 104, 255, 0.05) 100%);
-  border-color: rgba(0, 104, 255, 0.2);
-  min-height: 140px;
-  display: flex;
-  align-items: flex-start;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(0, 104, 255, 0.18);
+  box-shadow: 0 18px 40px rgba(0, 104, 255, 0.1);
+}
+
+.work-card-head {
+  background: var(--accent);
+  padding: 28px 24px;
+}
+
+.work-card-head h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+.work-card-body {
+  padding: 24px;
+  color: var(--muted);
+}
+
+.work-card-body p {
+  margin: 0;
+  line-height: 1.75;
 }
 
 .work-copy {
