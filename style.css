@@ -834,9 +834,9 @@ textarea:focus {
   }
 
   .header-inner {
-    display: grid;
+    /*display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto;*/
     align-items: center;
     gap: 16px;
     width: 100%;
@@ -923,6 +923,14 @@ textarea:focus {
 }
 
 @media (max-width: 520px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
   .btn {
     width: 100%;
   }
@@ -939,5 +947,116 @@ textarea:focus {
 
   .footer-inner {
     gap: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-grid,
+  .impact-grid,
+  .testimonial-grid,
+  .work-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    position: relative;
+  }
+
+  .header-inner {
+    padding: 18px 0;
+  }
+
+  .logo-img {
+    height: 48px;
+  }
+
+  .main-nav {
+    font-size: 0.9rem;
+    gap: 14px;
+  }
+
+  .hero-section {
+    padding: 40px 0 28px;
+  }
+
+  .hero-card {
+    padding: 30px 24px;
+    border-radius: 22px;
+  }
+
+  .hero-card h1 {
+    font-size: clamp(2rem, 11vw, 2.7rem);
+    line-height: 1;
+  }
+
+  .section-block {
+    padding: 48px 0;
+  }
+
+  .portfolio-grid,
+  .service-grid,
+  .impact-grid,
+  .testimonial-grid,
+  .work-cards,
+  .form-grid {
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .tool-icons img {
+    height: 76px;
+  }
+
+  .testimonial-card {
+    padding-right: 24px;
+  }
+
+  .contact-section {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolio-grid,
+  .service-grid,
+  .impact-grid,
+  .testimonial-grid,
+  .work-cards,
+  .form-grid {
+    grid-template-columns: 1fr
+  }
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-card {
+    padding: 28px 20px;
+  }
+
+  .section-header h2,
+  .workflow-copy h2,
+  .contact-copy h2 {
+    font-size: 2rem;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+  .tool-icons {
+    gap: 12px;
+  }
+
+  .tool-icons img {
+    height: 64px;
+  }
+
+  .portfolio-thumb {
+    height: 160px;
   }
 }
