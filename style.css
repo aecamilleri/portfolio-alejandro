@@ -244,7 +244,11 @@ textarea {
 .impact-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-
+article.feature-card {
+    border: 1px solid rgba(0, 104, 255, 0.18);
+    border-radius: 30px;
+    padding: 28px;
+}
 ..feature-card,
 .tool-card,
 .testimonial-card,
@@ -322,6 +326,7 @@ textarea {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 104, 255, 0.18);
+  border-radius: 30px;
   gap: 24px;
   background: #f9fbff;
   padding: 28px;
