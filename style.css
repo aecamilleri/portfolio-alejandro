@@ -473,6 +473,7 @@ article.feature-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-right: 48px;
 }
 
 .testimonial-card footer {
