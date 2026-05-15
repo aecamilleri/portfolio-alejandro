@@ -321,8 +321,10 @@ textarea {
 .workflow-card {
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(0, 104, 255, 0.18);
   gap: 24px;
   background: #f9fbff;
+  padding: 28px;
 }
 
 .card-tag {
