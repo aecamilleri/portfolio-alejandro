@@ -172,7 +172,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="work-copy">
+                <div class="section-header work-copy">
                     <p class="section-label">Experience</p>
                     <h2>What I’ve done before and can do for you</h2>
                 </div>
@@ -215,28 +215,36 @@
                 </div>
                 <div class="portfolio-grid">
                     <article class="portfolio-card" data-category="websites">
-                        <div class="portfolio-thumb"></div>
-                        <h3>Responsive website for SaaS growth</h3>
+                        <div class="portfolio-thumb"><img src="assets/img/works/websites/Nexus-Automated-Accounts-Payable-System-For-Real-Estate-1.png" alt="Automated accounts payable system"></div>
+                        <h3>Automated accounts payable solution</h3>
                     </article>
                     <article class="portfolio-card" data-category="websites">
-                        <div class="portfolio-thumb"></div>
-                        <h3>Launch page and brand refresh</h3>
+                        <div class="portfolio-thumb"><img src="assets/img/works/websites/Beesion-Low-Code-Telecom-Solutions-for-digital-business.png" alt="Low-code telecom solutions"></div>
+                        <h3>Low-code telecom product design</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="websites">
+                        <div class="portfolio-thumb"><img src="assets/img/works/websites/Envision-Your-Solution-in-Microservices.png" alt="Microservices product experience"></div>
+                        <h3>Microservices product experience</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="websites">
+                        <div class="portfolio-thumb"><img src="assets/img/works/websites/Digital-makeovers-that-get-independent-contractors-to-Yes-faster-01-16-2025_01_12_PM.png" alt="Digital makeovers for contractors"></div>
+                        <h3>Digital makeovers for contractors</h3>
                     </article>
                     <article class="portfolio-card" data-category="collateral">
-                        <div class="portfolio-thumb"></div>
-                        <h3>Sales deck and print collateral</h3>
-                    </article>
-                    <article class="portfolio-card" data-category="ux">
-                        <div class="portfolio-thumb"></div>
-                        <h3>UX flow for digital onboarding</h3>
+                        <div class="portfolio-thumb"><img src="assets/img/works/collateral/beesion_collateral_portfolio.jpg" alt="Collateral design portfolio"></div>
+                        <h3>Collateral and sales toolkit</h3>
                     </article>
                     <article class="portfolio-card" data-category="collateral">
-                        <div class="portfolio-thumb"></div>
-                        <h3>Brand toolkit and visual system</h3>
+                        <div class="portfolio-thumb"><img src="assets/img/works/collateral/NEX_SalesSlick_Mock-Up-Corporate-Slick-rev8-header-2_pages-to-jpg-0001-1.jpg" alt="Sales slick and corporate design"></div>
+                        <h3>Corporate sales slick design</h3>
                     </article>
                     <article class="portfolio-card" data-category="ux">
-                        <div class="portfolio-thumb"></div>
-                        <h3>Interface system for mobile product</h3>
+                        <div class="portfolio-thumb"><img src="assets/img/works/uxui/Flow_Bundle_step2_V2.4-scaled.webp" alt="UX flow bundle design"></div>
+                        <h3>UX flow bundle and interface design</h3>
+                    </article>
+                    <article class="portfolio-card" data-category="ux">
+                        <div class="portfolio-thumb"><img src="assets/img/works/uxui/original-84fce3b3a41342a224600d0acc38864d.png" alt="UX and graphic design exploration"></div>
+                        <h3>UX and graphic design exploration</h3>
                     </article>
                 </div>
             </section>
@@ -247,7 +255,7 @@
                     <h2>How we can work together</h2>
                 </div>
                 <div class="grid service-grid">
-                    <article class="service-card">
+                    <article class="service-item">
                         <h3>Project Work</h3>
                         <p>Full website builds, product launches, and website refreshes that ship quickly while staying polished.</p>
                         <div class="service-meta">
@@ -256,7 +264,7 @@
                             <span>Minimum: 4 weeks</span>
                         </div>
                     </article>
-                    <article class="service-card">
+                    <article class="service-item">
                         <h3>Supplement your Team</h3>
                         <p>Short-term support for design, development, or content execution when you need an extra expert.</p>
                         <div class="service-meta">
@@ -265,7 +273,7 @@
                             <span>Minimum: 2 weeks</span>
                         </div>
                     </article>
-                    <article class="service-card">
+                    <article class="service-item">
                         <h3>Transitional Support</h3>
                         <p>Project handoff help, product buildout, and launch support for teams scaling quickly.</p>
                         <div class="service-meta">
@@ -283,9 +291,15 @@
                     <h2>Let’s chat about how I can help</h2>
                     <p>Reach out to talk through your current project, product goals, or next website launch. I move quickly and make sure every collaboration stays aligned and clear.</p>
                     <div class="social-row" aria-label="Social links">
-                        <span class="social-pill">LN</span>
-                        <span class="social-pill">TW</span>
-                        <span class="social-pill">EM</span>
+                        <a class="social-pill" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-pill" href="https://twitter.com" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="social-pill" href="mailto:hello@example.com" aria-label="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
                 <form class="contact-form">
@@ -323,6 +337,14 @@
             </div>
         </footer>
     </div>
+
+    <div class="lightbox-overlay" aria-hidden="true" id="imageLightbox">
+        <button class="lightbox-close" type="button" aria-label="Close image view">×</button>
+        <div class="lightbox-content">
+            <img src="" alt="Expanded portfolio image" id="lightboxImage">
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
