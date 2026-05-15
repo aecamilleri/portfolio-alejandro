@@ -125,7 +125,7 @@ textarea {
 }
 
 .btn-secondary {
-  color: var(--accent);
+  color: #111827;
   background: rgba(0, 104, 255, 0.08);
 }
 
@@ -828,22 +828,51 @@ textarea:focus {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .container {
     padding: 0 20px;
   }
 
   .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .brand {
+    grid-column: 1 / 2;
+    grid-row: 1;
   }
 
   .main-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
     gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 60px 0 40px;
   }
 
   .hero-card {
     padding: 36px;
+    min-height: auto;
+    margin-right: 0;
+    justify-content: flex-start;
   }
 
   .hero-card h1 {
@@ -851,7 +880,7 @@ textarea:focus {
   }
 
   .hero-actions {
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
   }
 
